@@ -10,8 +10,8 @@ export default {
   props: {
     msg: String
   },
-  methods() {
-    getList(){}
+  methods: {
+    getList() {};
   }
 }
 </script>
