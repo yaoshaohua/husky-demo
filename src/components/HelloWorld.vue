@@ -11,7 +11,6 @@ export default {
     msg: String
   },
   methods: {
-    getList() {};
   }
 }
 </script>
