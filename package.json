@@ -38,5 +38,16 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*{.ts,.js}":[
+      "eslint --ext .tsx,.ts --fix ./src",
+      "git add"
+    ]
+  }
 }
