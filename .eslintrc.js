@@ -15,7 +15,9 @@ module.exports = {
   extends: [
     //继承 vue 的标准特性
     'plugin:vue/essential',
-    'eslint:recommended'
+    'eslint:recommended',
+    //避免与 prettier 冲突
+    'plugin:prettier/recommended'
   ],
   // 自定义eslint规则，严格按照StandardJS
   rules: {
@@ -329,12 +331,5 @@ module.exports = {
   //当使用第三方的SDK时，eslint会报找不到，可以加入到globals，取消对这个的检查
   globals: {
     fengmap: true
-  },
-  extends: [
-    //继承 vue 的标准特性
-    'plugin:vue/essential',
-    'eslint:recommended',
-    //避免与 prettier 冲突
-    'plugin:prettier/recommended'
-  ]
+  }
 }
